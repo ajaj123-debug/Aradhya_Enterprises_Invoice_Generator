@@ -37,6 +37,9 @@ export default function App() {
     customerAddress: 'New R S 127, Behind L&T Gate No 7, Village-Shivrampara, Hazira, Tal Choryasi, Surat, 394510\nGujarat, India',
     gstin: '24AACCS9869C1Z5',
     billTo: 'Canteen Food Bill',
+    contactName: 'Ajaj Ali',
+    contactPhone: '7079553517',
+    contactEmail: 'ajaj42699@gmail.com',
     totalAmount: 58797.0,
     notes: 'Subject to SURAT Jurisdiction\nCertified that the particulars given above are correct.\nThank you for your business. We appreciate your business and look forward to working with you.',
     bank: {
@@ -284,6 +287,10 @@ export default function App() {
           </div>
         </section>
       </main>
+
+      <footer className="page-footer">
+        <small>Contact: Ajaj • 7079553517 • ajaj42699@gmail.com</small>
+      </footer>
     </div>
   );
 }

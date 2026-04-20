@@ -248,6 +248,14 @@ textarea {
   margin-top: 6px;
 }
 
+.page-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #475569;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
 .services-detail {
   margin-top: 22px;
   flex-direction: column;
