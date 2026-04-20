@@ -1,0 +1,264 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f5f6fa;
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.page-shell {
+  padding: 24px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+}
+
+.app-header p {
+  margin: 4px 0 0;
+  opacity: 0.75;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+}
+
+.form-card,
+.preview-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.form-card h2,
+.preview-card h2 {
+  margin-top: 0;
+}
+
+.field-group {
+  display: grid;
+  gap: 14px;
+}
+
+.field-group label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.line-item-row {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr 0.8fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.service-row {
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 0.8fr;
+}
+
+.computed-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #f8fafc;
+  color: #111827;
+}
+
+.service-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 12px 14px;
+  background: #eef2ff;
+  border-radius: 12px;
+  border: 1px solid #c7d2fe;
+  font-weight: 700;
+}
+
+.download-button {
+  margin-top: 18px;
+  width: 100%;
+  border: none;
+  background: #1d4ed8;
+  color: white;
+  font-weight: 600;
+  padding: 14px 16px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background: #2563eb;
+}
+
+.invoice-preview {
+  padding: 28px;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background: white;
+}
+
+.invoice-header,
+.invoice-top-row,
+.bank-details,
+.services-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.invoice-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.invoice-header h1 {
+  margin: 0;
+  font-size: 1.55rem;
+}
+
+.invoice-meta {
+  min-width: 220px;
+  display: grid;
+  gap: 6px;
+  align-content: center;
+}
+
+.invoice-top-row {
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.bill-to,
+.summary-box {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  width: 100%;
+}
+
+.summary-box {
+  max-width: 240px;
+}
+
+.summary-amount {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.address-block {
+  margin-top: 8px;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.invoice-table,
+.services-detail table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+.invoice-table th,
+.invoice-table td,
+.services-detail th,
+.services-detail td {
+  border: 1px solid #d1d5db;
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.invoice-table th,
+.services-detail th {
+  background: #f3f4f6;
+}
+
+.invoice-table tfoot td,
+.services-detail tfoot td {
+  font-weight: 700;
+  background: #f8fafc;
+}
+
+.in-words {
+  margin-top: 18px;
+  font-size: 0.95rem;
+}
+
+.notes-card {
+  margin-top: 18px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 16px;
+  white-space: pre-wrap;
+}
+
+.bank-details {
+  margin-top: 22px;
+  flex-direction: column;
+}
+
+.bank-details div {
+  margin-top: 6px;
+}
+
+.services-detail {
+  margin-top: 22px;
+  flex-direction: column;
+}
+
+.services-detail h3 {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1080px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+}
