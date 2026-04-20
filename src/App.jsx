@@ -289,7 +289,7 @@ export default function App() {
       </main>
 
       <footer className="page-footer">
-        <small>Contact: Ajaj • 7079553517 • ajaj42699@gmail.com</small>
+        <small>Contact: Ajaj • ajaj42699@gmail.com</small>
       </footer>
     </div>
   );
