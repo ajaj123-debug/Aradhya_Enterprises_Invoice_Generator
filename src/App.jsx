@@ -57,6 +57,7 @@ export default function App() {
       { desc: 'COLD DRINK', qty: 66, rate: 15.0 },
       { desc: 'BREAKFST', qty: 33, rate: 32.0 },
       { desc: 'OFFICIAL LUNCH', qty: 46, rate: 120.0 },
+      { desc: 'OFFICIAL COFFEE', qty: 46, rate: 120.0 },
     ],
   });
   const invoiceRef = useRef(null);
